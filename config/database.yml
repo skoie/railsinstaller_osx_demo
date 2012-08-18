@@ -19,7 +19,9 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
-  pool: 5
-  timeout: 5000
+  adapter: mysql2
+  database: fluffypuppies
+  username: deploy
+  password: MyP4ssW0rd
+  host: ec2-50-16-218-136.compute-1.amazonaws.com
+  reconnect: true
